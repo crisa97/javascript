@@ -26,9 +26,10 @@ this.encolar1 =function(inf){
   this.encolar_autom=function(){
       cantidad=parseInt(prompt("Ingrese la cantidad de la cola"))
       for(i=0;i<=cantidad; i++){
-          this.elementos[0+i]=i;
+          //this.elementos[0+i]=i;
+          this.encolar(i);
       }
-      this.final++;
+      //this.final++;
 
   }
 
@@ -82,7 +83,7 @@ this.cadena_string=function(){
     cadena=[];
     for(i=0;i<=this.elementos.length;i++){
         if(this.elementos[i].typeof=="string"){
-            cadena=this.elementos
+            cadena.push(this.elementos[i])
         }
     }
     console.log(cadena)
